@@ -48,6 +48,10 @@
     padding: 20px;
 }
 
+.box1{
+    display: grid;
+}
+
 /* Pseudoclasses */
 .box:hover {
     background-color: var(--secondary-color);

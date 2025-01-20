@@ -104,3 +104,106 @@ element.classList.add("newClass");
 element.classList.remove("oldClass"); //Removing a class
 
 element.classList.toggle("active"); //Toggling a class
+
+
+///
+
+//Functions
+// Function Declaration
+function sayHello(name) {
+    return "Hello, " + name;
+}
+
+// Function Expression (Anonymous)
+const greet = function(name) {
+    return "Hi, " + name;
+};
+
+// Arrow Function (Shorter)
+const add = (a, b) => a + b;
+
+//Loops v2
+// For Loop
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+// While Loop
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+
+// ForEach (for arrays)
+let numbers = [1, 2, 3, 4];
+numbers.forEach(num => console.log(num));
+
+
+//Arrays
+let fruitsz = ["Apple", "Banana", "Orange"];
+
+console.log(fruitsz[0]); // "Apple"
+
+fruitsz.push("Mango");   // Add to end
+fruitsz.pop();           // Remove last item
+
+fruitsz.shift();         // Remove first item
+fruitsz.unshift("Grape"); // Add to start
+
+console.log(fruitsz.length); // Get array length
+
+//DOM Manipulation
+// Select elements
+let title = document.getElementById("title");
+let buttons = document.querySelectorAll(".btn");
+
+// Change text content
+title.textContent = "New Title";
+
+// Change styles
+title.style.color = "red";
+
+//Event listeners
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+    alert("Button clicked!");
+});
+
+// Arrow function version
+button.addEventListener("click", () => alert("Clicked!"));
+
+
+//Condtional statements
+let age = 18;
+
+if (age >= 18) {
+    console.log("You can vote");
+} else {
+    console.log("Too young");
+}
+
+// Ternary Operator
+let message = age >= 18 ? "Can vote" : "Too young";
+
+//9. Working with JSON (Objects in Text Format)
+let user = '{"name": "Alice", "age": 30}';
+
+// Convert JSON to Object
+let userObj = JSON.parse(user);
+console.log(userObj.name); // "Alice"
+
+// Convert Object to JSON
+let userJSON = JSON.stringify(userObj);
+console.log(userJSON);
+
+
+//local storage
+// Store data
+localStorage.setItem("username", "John");
+
+// Retrieve data
+let userName = localStorage.getItem("username");
+
+console.log(userName); // "John"
