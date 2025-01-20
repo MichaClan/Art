@@ -207,3 +207,23 @@ localStorage.setItem("username", "John");
 let userName = localStorage.getItem("username");
 
 console.log(userName); // "John"
+
+
+
+/*How to Survive the JavaScript Test
+Scan the test first – Look at all the questions quickly before starting. Find the easier ones first so you can secure points.
+Identify patterns – If a question looks confusing, break it down.
+If you see function something() {}, it’s about functions.
+If there’s a {}, it’s probably an object.
+If you see [ ], it’s an array.
+If it has document., it’s DOM manipulation.
+Think of the syntax you know – Even if you don’t remember the exact code, try to recall similar examples from the cheat sheet and adapt them.
+If stuck, write something logical – You might get partial points even if it’s not perfect.
+Last-Minute Tips
+Functions? Remember: function name() { return something; }
+Loops? for (let i = 0; i < array.length; i++)
+Arrays? push(), pop(), length, forEach()
+Objects? person.name, person["name"]
+Events? element.addEventListener("click", function() {})
+DOM? document.getElementById("something").textContent = "Hello";*/
+
